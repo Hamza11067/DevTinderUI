@@ -16,6 +16,8 @@ const Login = () => {
         { withCredentials: true }
       );
       console.log(res.data)
+      setEmail("");
+      setPassword("");
     } catch (error) {
       console.error("Login failed:", error);
     }
